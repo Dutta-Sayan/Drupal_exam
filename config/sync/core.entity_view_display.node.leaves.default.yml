@@ -1,0 +1,39 @@
+uuid: 9d921375-95da-4ba1-be02-496b02817321
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.leaves.field_date_of_leave
+    - field.field.node.leaves.field_reason
+    - node.type.leaves
+  module:
+    - datetime
+    - text
+    - user
+id: node.leaves.default
+targetEntityType: node
+bundle: leaves
+mode: default
+content:
+  field_date_of_leave:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_reason:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,20 @@
+uuid: 5e2eb6a3-9b7e-432a-9bf9-a3c7b9bf3bb6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_salary_process_status
+field_name: field_salary_process_status
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

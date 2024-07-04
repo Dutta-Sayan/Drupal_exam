@@ -1,0 +1,34 @@
+uuid: 5a4b19e2-2db1-4f82-86bd-9832e461a0f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.access-employees
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_accessemployees
+theme: olivero
+region: secondary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:access-employees'
+settings:
+  id: 'system_menu_block:access-employees'
+  label: 'Access Employees'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      hr: hr

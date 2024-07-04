@@ -1,0 +1,24 @@
+uuid: 988bad57-b5f3-430b-baee-087c43b79643
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_hra
+  module:
+    - user
+id: user.user.field_hra
+field_name: field_hra
+entity_type: user
+bundle: user
+label: HRA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: 100000.0
+  prefix: 'Rs. '
+  suffix: ''
+field_type: float

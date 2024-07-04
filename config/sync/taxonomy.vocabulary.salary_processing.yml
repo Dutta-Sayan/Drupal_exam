@@ -1,0 +1,9 @@
+uuid: 69727f2c-3843-4afd-b974-a89fb4af9f95
+langcode: en
+status: true
+dependencies: {  }
+name: 'Salary Processing'
+vid: salary_processing
+description: null
+weight: 0
+new_revision: false

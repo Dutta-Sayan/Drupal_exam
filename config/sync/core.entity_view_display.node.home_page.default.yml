@@ -1,0 +1,92 @@
+uuid: 2a3967a7-ac11-445d-b7f2-c6e59292d8bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home_page.layout_builder__layout
+    - node.type.home_page
+    - views.view.leave_info
+    - views.view.salary_and_leave_info
+    - views.view.user_details
+    - views.view.user_links
+  module:
+    - layout_builder
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          6f81d9f7-0eae-46f5-92cc-35551f9d4cde:
+            uuid: 6f81d9f7-0eae-46f5-92cc-35551f9d4cde
+            region: first
+            configuration:
+              id: 'views_block:user_links-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          47f25def-153b-4711-95f0-47a738de0d4d:
+            uuid: 47f25def-153b-4711-95f0-47a738de0d4d
+            region: second
+            configuration:
+              id: 'views_block:user_details-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          88b15ed7-b995-4dff-bd8e-23cb8a694fe6:
+            uuid: 88b15ed7-b995-4dff-bd8e-23cb8a694fe6
+            region: third
+            configuration:
+              id: 'views_block:salary_and_leave_info-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          c65497ed-78b4-4ae6-940a-1e7e13c265e3:
+            uuid: c65497ed-78b4-4ae6-940a-1e7e13c265e3
+            region: third
+            configuration:
+              id: 'views_block:leave_info-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.home_page.default
+targetEntityType: node
+bundle: home_page
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  layout_builder__layout: true

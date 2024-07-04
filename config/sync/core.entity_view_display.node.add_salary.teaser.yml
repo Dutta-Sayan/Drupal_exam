@@ -1,0 +1,28 @@
+uuid: 7385c9c5-5809-4bec-8cc5-82a4a455e91e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.add_salary.field_add_salary
+    - field.field.node.add_salary.field_choose_user
+    - field.field.node.add_salary.field_salary_month
+    - field.field.node.add_salary.field_salary_process_status
+    - node.type.add_salary
+  module:
+    - user
+id: node.add_salary.teaser
+targetEntityType: node
+bundle: add_salary
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_add_salary: true
+  field_choose_user: true
+  field_salary_month: true
+  field_salary_process_status: true

@@ -1,0 +1,24 @@
+uuid: 94409b85-2a2d-4372-9ff4-6a8ffcff6188
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_special_allowances
+  module:
+    - user
+id: user.user.field_special_allowances
+field_name: field_special_allowances
+entity_type: user
+bundle: user
+label: 'Special Allowances'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: 100000.0
+  prefix: 'Rs. '
+  suffix: ''
+field_type: float
