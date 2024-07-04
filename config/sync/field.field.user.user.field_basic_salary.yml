@@ -1,0 +1,24 @@
+uuid: fbd7e1e3-8833-4f44-acf2-55c10b2e1911
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_basic_salary
+  module:
+    - user
+id: user.user.field_basic_salary
+field_name: field_basic_salary
+entity_type: user
+bundle: user
+label: 'Basic Salary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+  prefix: 'Rs. '
+  suffix: ' /year'
+field_type: float

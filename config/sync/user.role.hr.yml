@@ -1,0 +1,30 @@
+uuid: baccca73-1228-473e-a5c1-271ad4c5d40e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.add_salary
+    - node.type.leaves
+  module:
+    - node
+    - toolbar
+id: hr
+label: HR
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'administer users'
+  - 'change own username'
+  - 'create add_salary content'
+  - 'create leaves content'
+  - 'delete any add_salary content'
+  - 'delete any leaves content'
+  - 'delete own add_salary content'
+  - 'delete own leaves content'
+  - 'edit any add_salary content'
+  - 'edit any leaves content'
+  - 'edit own add_salary content'
+  - 'edit own leaves content'

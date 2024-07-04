@@ -1,0 +1,60 @@
+uuid: e97b0ed9-f8a5-4b1e-bef3-bbed965efd04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.add_salary.field_add_salary
+    - field.field.node.add_salary.field_choose_user
+    - field.field.node.add_salary.field_salary_month
+    - field.field.node.add_salary.field_salary_process_status
+    - node.type.add_salary
+  module:
+    - datetime
+    - user
+id: node.add_salary.default
+targetEntityType: node
+bundle: add_salary
+mode: default
+content:
+  field_add_salary:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_choose_user:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_salary_month:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_salary_process_status:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

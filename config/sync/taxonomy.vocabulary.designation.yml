@@ -1,0 +1,9 @@
+uuid: 28bde570-2d06-4384-ab5d-f2e574b2ed10
+langcode: en
+status: true
+dependencies: {  }
+name: Designation
+vid: designation
+description: null
+weight: 0
+new_revision: false

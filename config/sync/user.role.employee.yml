@@ -1,0 +1,19 @@
+uuid: 9895cf2e-8d54-4d1e-837c-a648730635fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.leaves
+  module:
+    - node
+    - toolbar
+id: employee
+label: Employee
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create leaves content'
+  - 'delete own leaves content'
+  - 'edit own leaves content'

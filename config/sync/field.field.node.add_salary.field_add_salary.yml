@@ -1,0 +1,23 @@
+uuid: a762fc01-81fd-42ae-8cde-d492f2bd7baa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_salary
+    - node.type.add_salary
+id: node.add_salary.field_add_salary
+field_name: field_add_salary
+entity_type: node
+bundle: add_salary
+label: 'Add salary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: 100000.0
+  prefix: 'Rs. '
+  suffix: ''
+field_type: float
